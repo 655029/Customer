@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+        <array key="Poppins-SemiBold.ttf">
+            <string>Poppins-SemiBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Choose Your City View Controller-->
+        <scene sceneID="CT5-IJ-1ad">
+            <objects>
+                <viewController storyboardIdentifier="ChooseYourCityViewController" id="RCX-Ge-Qtk" customClass="ChooseYourCityViewController" customModule="Chores_for_me" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="H2z-OJ-aZ8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Select location" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ntY-3d-x23" customClass="AppTextField" customModule="Chores_for_me" customModuleProvider="target">
+                                <rect key="frame" x="24" y="60" width="366" height="52"/>
+                                <color key="backgroundColor" name="AppInputInavtiveBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="G4P-Qz-nXP"/>
+                                </constraints>
+                                <color key="textColor" name="AppInputTextColor"/>
+                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" keyboardType="webSearch" returnKeyType="next" textContentType="location"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Radius" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bub-cW-Xk3">
+                                <rect key="frame" x="24" y="142" width="74.5" height="14"/>
+                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="12"/>
+                                <color key="textColor" name="AppSecondaryLabelColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fvf-9c-5jC" customClass="DesignableButton" customModule="Designable">
+                                <rect key="frame" x="24" y="785" width="346" height="45"/>
+                                <color key="backgroundColor" name="AppSecondaryBackgroundColor"/>
+                                <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="15"/>
+                                <inset key="contentEdgeInsets" minX="20" minY="13.5" maxX="20" maxY="13.5"/>
+                                <state key="normal" title="NEXT">
+                                    <color key="titleColor" name="AppPrimaryLabelColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="nextButoonAction:" destination="RCX-Ge-Qtk" eventType="touchUpInside" id="JVc-7P-Swn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rhZ-B6-BQH">
+                                <rect key="frame" x="361" y="134.5" width="29" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="rhZ-B6-BQH" secondAttribute="height" id="9uC-uh-Oho"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal">
+                                    <imageReference key="image" image="location.fill" catalog="system" symbolScale="large" renderingMode="template"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="font">
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                    </preferredSymbolConfiguration>
+                                </state>
+                                <connections>
+                                    <action selector="selctOnMapButtonAction:" destination="RCX-Ge-Qtk" eventType="touchUpInside" id="igD-I6-Lf7"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="9Wc-v8-pKD">
+                                <rect key="frame" x="108.5" y="128" width="242.5" height="41.5"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="tc7-ab-K1h" customClass="AppTextField" customModule="Chores_for_me" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="144" height="41.5"/>
+                                        <color key="backgroundColor" name="AppInputInavtiveBackgroundColor"/>
+                                        <color key="textColor" name="AppInputTextColor"/>
+                                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="next"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ylv-1Z-WWo" customClass="DesignableButton" customModule="Designable">
+                                        <rect key="frame" x="154" y="0.0" width="88.5" height="41.5"/>
+                                        <color key="backgroundColor" name="AppInputAvtiveBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="88.5" id="rST-FZ-59J"/>
+                                        </constraints>
+                                        <color key="tintColor" name="AppInputTextColor"/>
+                                        <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
+                                        <state key="normal" title="Meter ">
+                                            <color key="titleColor" name="AppInputTextColor"/>
+                                            <imageReference key="image" image="arrowtriangle.down.fill" catalog="system" renderingMode="template"/>
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="15"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ei4-0N-Y0U"/>
+                        <color key="backgroundColor" red="0.92156862745098034" green="0.92156862745098034" blue="0.92156862745098034" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="rhZ-B6-BQH" firstAttribute="leading" secondItem="9Wc-v8-pKD" secondAttribute="trailing" constant="10" id="4cp-0Y-XP0"/>
+                            <constraint firstItem="rhZ-B6-BQH" firstAttribute="centerY" secondItem="9Wc-v8-pKD" secondAttribute="centerY" id="6Tl-kX-tPG"/>
+                            <constraint firstItem="Bub-cW-Xk3" firstAttribute="leading" secondItem="ntY-3d-x23" secondAttribute="leading" id="DQI-Qq-1rV"/>
+                            <constraint firstItem="ntY-3d-x23" firstAttribute="top" secondItem="ei4-0N-Y0U" secondAttribute="top" constant="16" id="EKg-Qs-Kaj"/>
+                            <constraint firstItem="Fvf-9c-5jC" firstAttribute="leading" secondItem="ei4-0N-Y0U" secondAttribute="leading" constant="24" id="ESh-bL-0fZ"/>
+                            <constraint firstItem="ei4-0N-Y0U" firstAttribute="bottom" secondItem="Fvf-9c-5jC" secondAttribute="bottom" constant="32" id="Fye-uv-l2f"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Fvf-9c-5jC" secondAttribute="trailing" constant="24" id="S6c-ra-9Ro"/>
+                            <constraint firstItem="9Wc-v8-pKD" firstAttribute="height" secondItem="ntY-3d-x23" secondAttribute="height" multiplier="0.8" id="f9Y-1p-h7f"/>
+                            <constraint firstItem="9Wc-v8-pKD" firstAttribute="leading" secondItem="Bub-cW-Xk3" secondAttribute="trailing" constant="10" id="hqC-Hc-6id"/>
+                            <constraint firstItem="9Wc-v8-pKD" firstAttribute="centerY" secondItem="Bub-cW-Xk3" secondAttribute="centerY" id="mCi-qg-3OY"/>
+                            <constraint firstItem="9Wc-v8-pKD" firstAttribute="top" secondItem="ntY-3d-x23" secondAttribute="bottom" constant="16" id="rzr-jg-X5P"/>
+                            <constraint firstItem="ntY-3d-x23" firstAttribute="leading" secondItem="ei4-0N-Y0U" secondAttribute="leading" constant="24" id="tJW-K4-TIG"/>
+                            <constraint firstItem="rhZ-B6-BQH" firstAttribute="trailing" secondItem="ntY-3d-x23" secondAttribute="trailing" id="uVp-AE-i4v"/>
+                            <constraint firstItem="ei4-0N-Y0U" firstAttribute="trailing" secondItem="ntY-3d-x23" secondAttribute="trailing" constant="24" id="z8M-pc-7g5"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="locationTextField" destination="ntY-3d-x23" id="f4x-AW-1L5"/>
+                        <outlet property="nextButtonBottomCostraint" destination="Fye-uv-l2f" id="qx2-cW-9VB"/>
+                        <outlet property="radiousTextField" destination="tc7-ab-K1h" id="vwk-He-6vh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FN7-4r-htd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-423.1884057971015" y="132.58928571428572"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="w1o-sO-8HO">
+            <objects>
+                <viewController id="NgU-Xl-t3B" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4QR-Yj-jyD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jtt-h4-2gb">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rnu-5R-ryu">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ctz-fd-vwp">
+                                                <rect key="frame" x="15" y="7.5" width="45" height="45"/>
+                                                <color key="backgroundColor" red="0.34143715289999998" green="0.41290543229999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="45" id="6vi-qX-vV5"/>
+                                                    <constraint firstAttribute="height" constant="45" id="HqF-4r-e3h"/>
+                                                </constraints>
+                                                <color key="tintColor" systemColor="systemBlueColor"/>
+                                                <state key="normal" image="BACK"/>
+                                            </button>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uOm-gk-oYL">
+                                                <rect key="frame" x="75" y="6" width="324" height="48"/>
+                                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" name="AppSecondaryLabelColor"/>
+                                        <constraints>
+                                            <constraint firstItem="uOm-gk-oYL" firstAttribute="centerY" secondItem="Ctz-fd-vwp" secondAttribute="centerY" id="1Tx-32-E6G"/>
+                                            <constraint firstItem="uOm-gk-oYL" firstAttribute="leading" secondItem="Ctz-fd-vwp" secondAttribute="trailing" constant="15" id="UGl-oU-FgW"/>
+                                            <constraint firstItem="uOm-gk-oYL" firstAttribute="top" secondItem="rnu-5R-ryu" secondAttribute="top" constant="6" id="gws-Ei-Tn7"/>
+                                            <constraint firstItem="Ctz-fd-vwp" firstAttribute="centerY" secondItem="rnu-5R-ryu" secondAttribute="centerY" id="k7W-Gn-zhw"/>
+                                            <constraint firstAttribute="trailing" secondItem="uOm-gk-oYL" secondAttribute="trailing" constant="15" id="m1z-de-4fa"/>
+                                            <constraint firstAttribute="bottom" secondItem="uOm-gk-oYL" secondAttribute="bottom" constant="6" id="qiZ-tW-Qir"/>
+                                            <constraint firstItem="Ctz-fd-vwp" firstAttribute="leading" secondItem="rnu-5R-ryu" secondAttribute="leading" constant="15" id="uqE-yT-1ba"/>
+                                            <constraint firstAttribute="height" constant="60" id="yaQ-FX-gPi"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sDP-Lg-dGJ">
+                                        <rect key="frame" x="0.0" y="60" width="414" height="792"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="NgU-Xl-t3B" id="kaE-za-MOk"/>
+                                        </connections>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="sDP-Lg-dGJ" secondAttribute="trailing" id="ALt-sf-vxJ"/>
+                                    <constraint firstItem="rnu-5R-ryu" firstAttribute="leading" secondItem="jtt-h4-2gb" secondAttribute="leading" id="SjZ-xs-iRC"/>
+                                    <constraint firstItem="rnu-5R-ryu" firstAttribute="top" secondItem="jtt-h4-2gb" secondAttribute="top" id="VyX-NE-2rP"/>
+                                    <constraint firstAttribute="bottom" secondItem="sDP-Lg-dGJ" secondAttribute="bottom" id="WJh-cW-4zX"/>
+                                    <constraint firstAttribute="trailing" secondItem="rnu-5R-ryu" secondAttribute="trailing" id="ohq-35-RdI"/>
+                                    <constraint firstItem="sDP-Lg-dGJ" firstAttribute="top" secondItem="rnu-5R-ryu" secondAttribute="bottom" id="ol5-a2-Nr8"/>
+                                    <constraint firstItem="sDP-Lg-dGJ" firstAttribute="leading" secondItem="jtt-h4-2gb" secondAttribute="leading" id="urX-il-v4w"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ian-Dy-fie"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="jtt-h4-2gb" firstAttribute="leading" secondItem="ian-Dy-fie" secondAttribute="leading" id="1YP-vi-Sbd"/>
+                            <constraint firstItem="jtt-h4-2gb" firstAttribute="top" secondItem="ian-Dy-fie" secondAttribute="top" id="992-bt-eev"/>
+                            <constraint firstAttribute="bottom" secondItem="jtt-h4-2gb" secondAttribute="bottom" id="uuY-fD-cmK"/>
+                            <constraint firstItem="jtt-h4-2gb" firstAttribute="trailing" secondItem="ian-Dy-fie" secondAttribute="trailing" id="z33-Px-lIg"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="sDP-Lg-dGJ" id="2lA-7e-79y"/>
+                        <outlet property="searchBGView" destination="uOm-gk-oYL" id="oWn-Al-ncl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gs1-Cc-KeM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="252.17391304347828" y="132.58928571428572"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="Fvf-9c-5jC">
+            <size key="intrinsicContentSize" width="78" height="45"/>
+        </designable>
+        <designable name="Ylv-1Z-WWo">
+            <size key="intrinsicContentSize" width="87" height="22"/>
+        </designable>
+        <designable name="ntY-3d-x23">
+            <size key="intrinsicContentSize" width="140.5" height="34"/>
+        </designable>
+        <designable name="tc7-ab-K1h">
+            <size key="intrinsicContentSize" width="33" height="34"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="BACK" width="30" height="30"/>
+        <image name="arrowtriangle.down.fill" catalog="system" width="128" height="124"/>
+        <image name="location.fill" catalog="system" width="128" height="121"/>
+        <namedColor name="AppInputAvtiveBackgroundColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="AppInputInavtiveBackgroundColor">
+            <color red="0.96078431372549022" green="0.97254901960784312" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="AppInputTextColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="AppPrimaryLabelColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="AppSecondaryBackgroundColor">
+            <color red="0.12549019607843137" green="0.14117647058823529" blue="0.16470588235294117" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="AppSecondaryLabelColor">
+            <color red="0.12549019607843137" green="0.14117647058823529" blue="0.16470588235294117" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

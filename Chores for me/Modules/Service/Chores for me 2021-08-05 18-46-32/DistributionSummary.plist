@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Chores for me.ipa</key>
+	<array>
+		<dict>
+			<key>architectures</key>
+			<array>
+				<string>arm64</string>
+			</array>
+			<key>certificate</key>
+			<dict>
+				<key>SHA1</key>
+				<string>E84D8976E77233E343C0734591A6CBA7FA261816</string>
+				<key>dateExpires</key>
+				<string>18/03/22</string>
+				<key>type</key>
+				<string>Apple Development</string>
+			</dict>
+			<key>embeddedBinaries</key>
+			<array>
+				<dict>
+					<key>architectures</key>
+					<array>
+						<string>arm64</string>
+					</array>
+					<key>certificate</key>
+					<dict>
+						<key>SHA1</key>
+						<string>E84D8976E77233E343C0734591A6CBA7FA261816</string>
+						<key>dateExpires</key>
+						<string>18/03/22</string>
+						<key>type</key>
+						<string>Apple Development</string>
+					</dict>
+					<key>name</key>
+					<string>ADCountryPicker.framework</string>
+					<key>team</key>
+					<dict>
+						<key>id</key>
+						<string>E6MMJ8JFC4</string>
+						<key>name</key>
+						<string>Pavan Kumar</string>
+					</dict>
+				</dict>
+				<dict>
+					<key>architectures</key>
+					<array>
+						<string>arm64</string>
+					</array>
+					<key>certificate</key>
+					<dict>
+						<key>SHA1</key>
+						<string>E84D8976E77233E343C0734591A6CBA7FA261816</string>
+						<key>dateExpires</key>
+						<string>18/03/22</string>
+						<key>type</key>
+						<string>Apple Development</string>
+					</dict>
+					<key>name</key>
+					<string>Designable.framework</string>
+					<key>team</key>
+					<dict>
+						<key>id</key>
+						<string>E6MMJ8JFC4</string>
+						<key>name</key>
+						<string>Pavan Kumar</string>
+					</dict>
+				</dict>
+				<dict>
+					<key>architectures</key>
+					<array>
+						<string>arm64</string>
+					</array>
+					<key>certificate</key>
+					<dict>
+						<key>SHA1</key>
+						<string>E84D8976E77233E343C0734591A6CBA7FA261816</string>
+						<key>dateExpires</key>
+						<string>18/03/22</string>
+						<key>type</key>
+						<string>Apple Development</string>
+					</dict>
+					<key>name</key>
+					<string>IQKeyboardManagerSwift.framework</string>
+					<key>team</key>
+					<dict>
+						<key>id</key>
+						<string>E6MMJ8JFC4</string>
+						<key>name</key>
+						<string>Pavan Kumar</string>
+					</dict>
+				</dict>
+				<dict>
+					<key>architectures</key>
+					<array>
+						<string>arm64</string>
+					</array>
+					<key>certificate</key>
+					<dict>
+						<key>SHA1</key>
+						<string>E84D8976E77233E343C0734591A6CBA7FA261816</string>
+						<key>dateExpires</key>
+						<string>18/03/22</string>
+						<key>type</key>
+						<string>Apple Development</string>
+					</dict>
+					<key>name</key>
+					<string>SideMenu.framework</string>
+					<key>team</key>
+					<dict>
+						<key>id</key>
+						<string>E6MMJ8JFC4</string>
+						<key>name</key>
+						<string>Pavan Kumar</string>
+					</dict>
+				</dict>
+				<dict>
+					<key>architectures</key>
+					<array>
+						<string>arm64</string>
+					</array>
+					<key>certificate</key>
+					<dict>
+						<key>SHA1</key>
+						<string>E84D8976E77233E343C0734591A6CBA7FA261816</string>
+						<key>dateExpires</key>
+						<string>18/03/22</string>
+						<key>type</key>
+						<string>Apple Development</string>
+					</dict>
+					<key>name</key>
+					<string>SnapKit.framework</string>
+					<key>team</key>
+					<dict>
+						<key>id</key>
+						<string>E6MMJ8JFC4</string>
+						<key>name</key>
+						<string>Pavan Kumar</string>
+					</dict>
+				</dict>
+			</array>
+			<key>entitlements</key>
+			<dict>
+				<key>application-identifier</key>
+				<string>E6MMJ8JFC4.com.choresfor.me.dev</string>
+				<key>com.apple.developer.team-identifier</key>
+				<string>E6MMJ8JFC4</string>
+				<key>get-task-allow</key>
+				<true/>
+				<key>keychain-access-groups</key>
+				<array>
+					<string>E6MMJ8JFC4.com.choresfor.me.dev</string>
+				</array>
+			</dict>
+			<key>name</key>
+			<string>Chores for me.app</string>
+			<key>profile</key>
+			<dict>
+				<key>UUID</key>
+				<string>052d6ac5-d92b-48ae-bdb4-4f6134bfb94b</string>
+				<key>name</key>
+				<string>iOS Team Provisioning Profile: com.choresfor.me.dev</string>
+			</dict>
+			<key>team</key>
+			<dict>
+				<key>id</key>
+				<string>E6MMJ8JFC4</string>
+				<key>name</key>
+				<string>Pavan Kumar</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>

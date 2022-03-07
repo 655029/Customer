@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Tni-DX-XfO">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="vPW-MT-Lvm">
+            <objects>
+                <viewController id="Tni-DX-XfO" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6tT-ut-1fC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="app.logo.dark" translatesAutoresizingMaskIntoConstraints="NO" id="iD5-Fh-0fq">
+                                <rect key="frame" x="90.5" y="359.5" width="233.5" height="187"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="iD5-Fh-0fq" secondAttribute="height" multiplier="1.25" id="CsJ-Ux-AcN"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AqV-fF-orq">
+                                <rect key="frame" x="103.5" y="274.5" width="207" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="LYk-mt-j7n"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Mlp-dd-Jrh"/>
+                        <color key="backgroundColor" name="AppPrimaryBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="iD5-Fh-0fq" firstAttribute="top" secondItem="AqV-fF-orq" secondAttribute="bottom" constant="10" id="4Bj-ui-Jv5"/>
+                            <constraint firstItem="iD5-Fh-0fq" firstAttribute="centerX" secondItem="Mlp-dd-Jrh" secondAttribute="centerX" id="D4K-iH-Rpq"/>
+                            <constraint firstItem="iD5-Fh-0fq" firstAttribute="width" secondItem="6tT-ut-1fC" secondAttribute="width" multiplier="0.56401" id="F9h-yY-jU4"/>
+                            <constraint firstItem="AqV-fF-orq" firstAttribute="width" secondItem="6tT-ut-1fC" secondAttribute="width" multiplier="0.5" id="G9e-cZ-lyc"/>
+                            <constraint firstItem="iD5-Fh-0fq" firstAttribute="centerY" secondItem="Mlp-dd-Jrh" secondAttribute="centerY" id="PLd-r2-XhX"/>
+                            <constraint firstItem="AqV-fF-orq" firstAttribute="centerX" secondItem="Mlp-dd-Jrh" secondAttribute="centerX" id="XTv-Ne-2f0"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="AqV-fF-orq"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ReP-xs-aOF" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="805.79710144927537" y="351.5625"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="app.logo.dark" width="233.5" height="234.5"/>
+        <namedColor name="AppPrimaryBackgroundColor">
+            <color red="0.16862745098039217" green="0.18823529411764706" blue="0.2196078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

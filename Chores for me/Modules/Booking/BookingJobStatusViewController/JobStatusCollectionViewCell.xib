@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Medium.ttf">
+            <string>Poppins-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="JobStatusCollectionViewCell" id="gTV-IL-0wX" customClass="JobStatusCollectionViewCell" customModule="Chores_for_me" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="197" height="128"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="197" height="128"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X3I-Xf-eqg">
+                        <rect key="frame" x="98.5" y="97" width="0.0" height="0.0"/>
+                        <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="8"/>
+                        <color key="textColor" name="AppSecondaryLabelColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checked" translatesAutoresizingMaskIntoConstraints="NO" id="6dI-fk-UN5">
+                        <rect key="frame" x="83.5" y="59" width="30" height="30"/>
+                        <color key="tintColor" systemColor="systemYellowColor"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="6dI-fk-UN5" secondAttribute="height" id="EEb-Tg-GYl"/>
+                            <constraint firstAttribute="height" constant="30" id="UER-bl-8Oj"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4v7-K0-qao">
+                        <rect key="frame" x="0.0" y="73.5" width="83.5" height="1"/>
+                        <color key="backgroundColor" name="AppDefaultBorderColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="afm-Jt-6ja"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3xn-lx-jb0">
+                        <rect key="frame" x="113.5" y="73.5" width="83.5" height="1"/>
+                        <color key="backgroundColor" name="AppDefaultBorderColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="HXG-ib-7G9"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Job Progress" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8V6-Qf-uq3">
+                        <rect key="frame" x="57" y="97" width="83" height="11"/>
+                        <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="14"/>
+                        <color key="textColor" systemColor="systemYellowColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="X3I-Xf-eqg" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="5qF-ka-R8q"/>
+                <constraint firstItem="6dI-fk-UN5" firstAttribute="leading" secondItem="4v7-K0-qao" secondAttribute="trailing" id="7JE-Pg-KR1"/>
+                <constraint firstItem="8V6-Qf-uq3" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="AZB-sd-piW"/>
+                <constraint firstItem="3xn-lx-jb0" firstAttribute="leading" secondItem="6dI-fk-UN5" secondAttribute="trailing" id="JU8-NC-iCn"/>
+                <constraint firstItem="6dI-fk-UN5" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="M4M-9a-mw5"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="bottom" secondItem="8V6-Qf-uq3" secondAttribute="bottom" constant="20" id="SAJ-00-fKP"/>
+                <constraint firstItem="8V6-Qf-uq3" firstAttribute="top" secondItem="6dI-fk-UN5" secondAttribute="bottom" constant="8" id="Wo2-ar-ALi"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="X3I-Xf-eqg" secondAttribute="bottom" constant="8" id="YYx-R6-HHW"/>
+                <constraint firstAttribute="trailing" secondItem="3xn-lx-jb0" secondAttribute="trailing" id="av8-Xe-EF3"/>
+                <constraint firstItem="4v7-K0-qao" firstAttribute="centerY" secondItem="6dI-fk-UN5" secondAttribute="centerY" id="f1E-Qa-v3b"/>
+                <constraint firstItem="3xn-lx-jb0" firstAttribute="centerY" secondItem="6dI-fk-UN5" secondAttribute="centerY" id="fIF-4f-dDL"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="top" secondItem="6dI-fk-UN5" secondAttribute="top" constant="-15" id="hiy-lP-m3I"/>
+                <constraint firstItem="4v7-K0-qao" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="p3A-hi-jF1"/>
+                <constraint firstItem="X3I-Xf-eqg" firstAttribute="top" secondItem="6dI-fk-UN5" secondAttribute="bottom" constant="8" id="z7R-lc-X4r"/>
+            </constraints>
+            <size key="customSize" width="197" height="128"/>
+            <connections>
+                <outlet property="dateLabel" destination="X3I-Xf-eqg" id="VP7-TB-Ch9"/>
+                <outlet property="jobProgressImageView" destination="6dI-fk-UN5" id="inG-2Z-MJx"/>
+                <outlet property="jobProgressLabel" destination="8V6-Qf-uq3" id="90d-fi-g0s"/>
+                <outlet property="leftBarView" destination="4v7-K0-qao" id="6vR-Vl-3uF"/>
+                <outlet property="rightBarView" destination="3xn-lx-jb0" id="OOf-mi-DQX"/>
+            </connections>
+            <point key="canvasLocation" x="51.449275362318843" y="91.741071428571431"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="checked" width="16" height="16"/>
+        <namedColor name="AppDefaultBorderColor">
+            <color red="0.59215686274509804" green="0.66666666666666663" blue="0.74117647058823533" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="AppSecondaryLabelColor">
+            <color red="0.12549019607843137" green="0.14117647058823529" blue="0.16470588235294117" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SelectedCollectionViewCell" id="gTV-IL-0wX" customClass="SelectedCollectionViewCell" customModule="Chores_for_me" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="236" height="66"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="236" height="66"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fZt-l6-j1A" customClass="DesignableView" customModule="Designable">
+                        <rect key="frame" x="0.0" y="0.0" width="236" height="66"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Lawn Mowing" translatesAutoresizingMaskIntoConstraints="NO" id="swW-U3-uor">
+                                <rect key="frame" x="0.0" y="15.5" width="40" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="1V7-AK-8qF"/>
+                                    <constraint firstAttribute="width" constant="40" id="V1l-kW-Yvr"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="3c8-eW-Jlu">
+                                <rect key="frame" x="45" y="22.5" width="187" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" name="AppInputTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" name="AppPrimaryLabelColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="3c8-eW-Jlu" secondAttribute="trailing" constant="4" id="LMr-0Q-qIy"/>
+                            <constraint firstItem="swW-U3-uor" firstAttribute="centerY" secondItem="fZt-l6-j1A" secondAttribute="centerY" id="a8h-MY-fKn"/>
+                            <constraint firstItem="swW-U3-uor" firstAttribute="leading" secondItem="fZt-l6-j1A" secondAttribute="leading" id="fmg-Ob-2PD"/>
+                            <constraint firstItem="3c8-eW-Jlu" firstAttribute="leading" secondItem="swW-U3-uor" secondAttribute="trailing" constant="5" id="jz8-hB-R5r"/>
+                            <constraint firstItem="3c8-eW-Jlu" firstAttribute="centerY" secondItem="swW-U3-uor" secondAttribute="centerY" id="stR-FK-XfM"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="0.5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" red="0.16862745100000001" green="0.18823529410000001" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="fZt-l6-j1A" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="4D5-fH-xsI"/>
+                <constraint firstAttribute="bottom" secondItem="fZt-l6-j1A" secondAttribute="bottom" id="E1l-aY-Acn"/>
+                <constraint firstAttribute="trailing" secondItem="fZt-l6-j1A" secondAttribute="trailing" id="IRO-XO-2hA"/>
+                <constraint firstItem="fZt-l6-j1A" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="etc-qV-rcn"/>
+            </constraints>
+            <size key="customSize" width="236" height="66"/>
+            <connections>
+                <outlet property="selecetdCategoryName" destination="3c8-eW-Jlu" id="DEv-Ss-V9L"/>
+                <outlet property="selectedCategoryImage" destination="swW-U3-uor" id="3ZK-tu-Ufp"/>
+            </connections>
+            <point key="canvasLocation" x="194.20289855072465" y="62.276785714285708"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Lawn Mowing" width="30" height="30"/>
+        <namedColor name="AppInputTextColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="AppPrimaryLabelColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

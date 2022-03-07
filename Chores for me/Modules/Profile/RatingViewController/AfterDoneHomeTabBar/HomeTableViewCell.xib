@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Bold.ttf">
+            <string>Poppins-Bold</string>
+        </array>
+        <array key="Poppins-Medium.ttf">
+            <string>Poppins-Medium</string>
+        </array>
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="BookingsTableViewCell" rowHeight="320" id="wpn-xg-5vX" customClass="BookingsTableViewCell" customModule="Chores_for_me" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="578" height="320"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wpn-xg-5vX" id="zCd-w8-gZd">
+                <rect key="frame" x="0.0" y="0.0" width="578" height="320"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K6D-sO-cNP" customClass="DesignableView" customModule="Designable">
+                        <rect key="frame" x="20" y="11" width="538" height="298"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8lr-Hr-JOF">
+                                <rect key="frame" x="0.0" y="294" width="538" height="4"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="4" id="g3g-o4-RMT"/>
+                                </constraints>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="outdoor_home_service" translatesAutoresizingMaskIntoConstraints="NO" id="CoV-rg-nO4">
+                                <rect key="frame" x="12" y="24" width="75" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="CoV-rg-nO4" secondAttribute="height" id="8jV-pW-elR"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Outdoor Home Service" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r8E-Hd-nit">
+                                <rect key="frame" x="95" y="22" width="431" height="17.5"/>
+                                <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="15"/>
+                                <color key="textColor" name="AppSecondaryLabelColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rohit Kaushal" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ghw-ze-zBv">
+                                <rect key="frame" x="431" y="134" width="95" height="17.5"/>
+                                <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="15"/>
+                                <color key="textColor" name="AppSecondaryLabelColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LQf-Dd-c6B">
+                                <rect key="frame" x="95" y="43.5" width="431" height="30.5"/>
+                                <string key="text">Street:  46, Nicholson Road, Chandni Chowk City:   Delhi State/province/area:    Delhi Phone number  01123953981 Zip code  110006
+Country calling code  +91
+Country  India</string>
+                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="13"/>
+                                <color key="textColor" name="AppSecondaryLabelColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="40min" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Ex-JN-Df4">
+                                <rect key="frame" x="502.5" y="6" width="27.5" height="12"/>
+                                <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="10"/>
+                                <color key="textColor" name="AppSecondaryLabelColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cbh-bQ-eyQ">
+                                <rect key="frame" x="12" y="134" width="93.5" height="26"/>
+                                <string key="text">Monday  $50-$100
+12/Feb/2021</string>
+                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="11"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user.profile.icon" translatesAutoresizingMaskIntoConstraints="NO" id="gNr-1z-hRu" customClass="DesignableImageView" customModule="Designable">
+                                <rect key="frame" x="383" y="134" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Jlh-2f-p88"/>
+                                    <constraint firstAttribute="width" secondItem="gNr-1z-hRu" secondAttribute="height" multiplier="1:1" id="kz5-qj-J78"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gNm-qN-vlS" customClass="FloatRatingView" customModule="Chores_for_me" customModuleProvider="target">
+                                <rect key="frame" x="431" y="155.5" width="95" height="15"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" name="AppSkyBlueColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="ooH-Xm-b1o"/>
+                                    <constraint firstAttribute="width" constant="95" id="tnQ-A8-iYo"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="minRating">
+                                        <integer key="value" value="0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="maxRating">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="rating">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="emptyImage" value="star.empty"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="fullImage" value="star.fill"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="VSQ-XB-B5C">
+                                <rect key="frame" x="95" y="82" width="431" height="32"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="cfW-cK-0os"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="3PQ-yc-5cp">
+                                    <size key="itemSize" width="128" height="40"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="r8E-Hd-nit" firstAttribute="leading" secondItem="CoV-rg-nO4" secondAttribute="trailing" constant="8" symbolic="YES" id="4MF-zm-zTV"/>
+                            <constraint firstAttribute="bottom" secondItem="8lr-Hr-JOF" secondAttribute="bottom" id="6fp-L0-DFa"/>
+                            <constraint firstAttribute="trailing" secondItem="Ghw-ze-zBv" secondAttribute="trailing" constant="12" id="7z9-Gq-kKv"/>
+                            <constraint firstItem="gNm-qN-vlS" firstAttribute="leading" secondItem="Ghw-ze-zBv" secondAttribute="leading" id="AVU-Yg-mnw"/>
+                            <constraint firstItem="2Ex-JN-Df4" firstAttribute="top" secondItem="K6D-sO-cNP" secondAttribute="top" constant="6" id="GYV-Ec-aMw"/>
+                            <constraint firstItem="VSQ-XB-B5C" firstAttribute="top" secondItem="LQf-Dd-c6B" secondAttribute="bottom" constant="8" symbolic="YES" id="HKv-zd-DLx"/>
+                            <constraint firstItem="cbh-bQ-eyQ" firstAttribute="leading" secondItem="CoV-rg-nO4" secondAttribute="leading" id="HkD-je-5l3"/>
+                            <constraint firstItem="gNr-1z-hRu" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="cbh-bQ-eyQ" secondAttribute="trailing" constant="8" id="JAK-KU-unf"/>
+                            <constraint firstAttribute="trailing" secondItem="VSQ-XB-B5C" secondAttribute="trailing" constant="12" id="JSt-Fn-Tb9"/>
+                            <constraint firstAttribute="trailing" secondItem="r8E-Hd-nit" secondAttribute="trailing" constant="12" id="Jjm-vB-IMK"/>
+                            <constraint firstItem="Ghw-ze-zBv" firstAttribute="top" secondItem="gNr-1z-hRu" secondAttribute="top" id="ODi-8Z-UtP"/>
+                            <constraint firstAttribute="trailing" secondItem="2Ex-JN-Df4" secondAttribute="trailing" constant="8" id="P4g-EK-xFs"/>
+                            <constraint firstAttribute="trailing" secondItem="8lr-Hr-JOF" secondAttribute="trailing" id="QQH-T3-2Ku"/>
+                            <constraint firstItem="r8E-Hd-nit" firstAttribute="top" secondItem="CoV-rg-nO4" secondAttribute="top" id="QvB-2d-gKX"/>
+                            <constraint firstItem="8lr-Hr-JOF" firstAttribute="top" relation="greaterThanOrEqual" secondItem="cbh-bQ-eyQ" secondAttribute="bottom" constant="12" id="TfA-vn-2GF"/>
+                            <constraint firstAttribute="trailing" secondItem="LQf-Dd-c6B" secondAttribute="trailing" constant="12" id="UHY-By-a5r"/>
+                            <constraint firstItem="Ghw-ze-zBv" firstAttribute="leading" secondItem="gNr-1z-hRu" secondAttribute="trailing" constant="8" id="Yfr-sR-32D"/>
+                            <constraint firstItem="LQf-Dd-c6B" firstAttribute="top" secondItem="r8E-Hd-nit" secondAttribute="bottom" constant="4" id="YhP-ol-dLN"/>
+                            <constraint firstAttribute="trailing" secondItem="r8E-Hd-nit" secondAttribute="trailing" constant="12" id="Z2e-3y-EHO"/>
+                            <constraint firstItem="gNr-1z-hRu" firstAttribute="width" secondItem="gNr-1z-hRu" secondAttribute="height" multiplier="1:1" id="ayM-AS-zzz"/>
+                            <constraint firstItem="CoV-rg-nO4" firstAttribute="leading" secondItem="K6D-sO-cNP" secondAttribute="leading" constant="12" id="hwW-FH-Fiz"/>
+                            <constraint firstItem="cbh-bQ-eyQ" firstAttribute="top" secondItem="VSQ-XB-B5C" secondAttribute="bottom" constant="20" id="ia2-pH-i1M"/>
+                            <constraint firstItem="VSQ-XB-B5C" firstAttribute="leading" secondItem="LQf-Dd-c6B" secondAttribute="leading" id="jJ1-nX-MEU"/>
+                            <constraint firstItem="CoV-rg-nO4" firstAttribute="width" secondItem="CoV-rg-nO4" secondAttribute="height" id="jUh-Ux-wAP"/>
+                            <constraint firstItem="gNm-qN-vlS" firstAttribute="top" secondItem="Ghw-ze-zBv" secondAttribute="bottom" constant="4" id="mcd-zv-2AV"/>
+                            <constraint firstItem="8lr-Hr-JOF" firstAttribute="top" relation="greaterThanOrEqual" secondItem="gNm-qN-vlS" secondAttribute="bottom" constant="12" id="pN4-Pl-79I"/>
+                            <constraint firstItem="gNr-1z-hRu" firstAttribute="top" secondItem="cbh-bQ-eyQ" secondAttribute="top" id="sws-hB-9L2"/>
+                            <constraint firstItem="CoV-rg-nO4" firstAttribute="top" secondItem="2Ex-JN-Df4" secondAttribute="bottom" constant="4" id="tCt-XY-Z1t"/>
+                            <constraint firstItem="8lr-Hr-JOF" firstAttribute="leading" secondItem="K6D-sO-cNP" secondAttribute="leading" id="vLP-L9-X9j"/>
+                            <constraint firstItem="LQf-Dd-c6B" firstAttribute="leading" secondItem="r8E-Hd-nit" secondAttribute="leading" id="y6r-rQ-ple"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="gNm-qN-vlS" secondAttribute="trailing" constant="12" id="zP2-n7-NqM"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottomMargin" secondItem="K6D-sO-cNP" secondAttribute="bottom" id="1LW-ID-eze"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="K6D-sO-cNP" secondAttribute="trailing" id="WUO-Ox-eOz"/>
+                    <constraint firstItem="K6D-sO-cNP" firstAttribute="top" secondItem="zCd-w8-gZd" secondAttribute="topMargin" id="gvU-8I-e8V"/>
+                    <constraint firstItem="K6D-sO-cNP" firstAttribute="leading" secondItem="zCd-w8-gZd" secondAttribute="leadingMargin" id="xqt-tZ-ic4"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="collectionView" destination="VSQ-XB-B5C" id="NTH-OB-m8T"/>
+            </connections>
+            <point key="canvasLocation" x="-81.159420289855078" y="362.94642857142856"/>
+        </tableViewCell>
+    </objects>
+    <designables>
+        <designable name="gNr-1z-hRu">
+            <size key="intrinsicContentSize" width="60" height="60"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="outdoor_home_service" width="75" height="75"/>
+        <image name="star.empty" width="25" height="25"/>
+        <image name="star.fill" width="25" height="25"/>
+        <image name="user.profile.icon" width="60" height="60"/>
+        <namedColor name="AppSecondaryLabelColor">
+            <color red="0.12549019607843137" green="0.14117647058823529" blue="0.16470588235294117" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="AppSkyBlueColor">
+            <color red="0.0" green="0.67843137254901964" blue="0.93725490196078431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

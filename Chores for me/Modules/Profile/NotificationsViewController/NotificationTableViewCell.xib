@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Medium.ttf">
+            <string>Poppins-Medium</string>
+        </array>
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="NotificationTableViewCell" rowHeight="94" id="JZk-aj-iLo" customClass="NotificationTableViewCell" customModule="Chores_for_me" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="425" height="102"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="JZk-aj-iLo" id="tmy-Kb-kLJ">
+                <rect key="frame" x="0.0" y="0.0" width="425" height="102"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rohit Kaushal Rating your profile" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1DW-gn-nMG">
+                        <rect key="frame" x="62.5" y="6" width="300" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="300" id="NaS-cm-Ncd"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="17"/>
+                        <color key="textColor" name="AppSecondaryLabelColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5m" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kff-ri-1mD">
+                        <rect key="frame" x="393" y="80" width="17" height="12"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="12" id="9pF-WI-zUb"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="10"/>
+                        <color key="textColor" name="AppInputTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EEf-P0-heZ">
+                        <rect key="frame" x="0.0" y="96" width="425" height="2"/>
+                        <color key="backgroundColor" systemColor="systemGray3Color"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="2" id="I0o-Jf-vTz"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="⚫️" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bfU-zb-oiV">
+                        <rect key="frame" x="5" y="7" width="23" height="22"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="KlR-ej-wk0">
+                        <rect key="frame" x="300" y="46" width="110" height="32"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NXr-Pq-jz1" customClass="DesignableButton" customModule="Designable">
+                                <rect key="frame" x="0.0" y="0.0" width="51" height="32"/>
+                                <color key="backgroundColor" name="AppSecondaryBackgroundColor"/>
+                                <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="11"/>
+                                <inset key="contentEdgeInsets" minX="12" minY="8" maxX="12" maxY="8"/>
+                                <state key="normal" title="PAY">
+                                    <color key="titleColor" name="AppPrimaryLabelColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vlR-IS-UXD" customClass="DesignableButton" customModule="Designable">
+                                <rect key="frame" x="59" y="0.0" width="51" height="32"/>
+                                <color key="backgroundColor" name="AppSecondaryBackgroundColor"/>
+                                <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="11"/>
+                                <inset key="contentEdgeInsets" minX="12" minY="8" maxX="12" maxY="8"/>
+                                <state key="normal" title="RATE">
+                                    <color key="titleColor" name="AppPrimaryLabelColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <color key="backgroundColor" name="AppTertiaryBackgroundColor"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="EEf-P0-heZ" secondAttribute="trailing" id="1Mj-cM-Pb3"/>
+                    <constraint firstItem="KlR-ej-wk0" firstAttribute="top" secondItem="1DW-gn-nMG" secondAttribute="bottom" constant="16" id="5aR-DA-Ycs"/>
+                    <constraint firstItem="EEf-P0-heZ" firstAttribute="leading" secondItem="tmy-Kb-kLJ" secondAttribute="leading" id="7YU-y4-kqe"/>
+                    <constraint firstItem="1DW-gn-nMG" firstAttribute="centerX" secondItem="tmy-Kb-kLJ" secondAttribute="centerX" id="Afn-da-qa8"/>
+                    <constraint firstItem="EEf-P0-heZ" firstAttribute="top" secondItem="KlR-ej-wk0" secondAttribute="bottom" constant="18" id="DGb-5q-0Tr"/>
+                    <constraint firstItem="1DW-gn-nMG" firstAttribute="top" secondItem="tmy-Kb-kLJ" secondAttribute="top" constant="6" id="Elf-qL-Xkt"/>
+                    <constraint firstItem="bfU-zb-oiV" firstAttribute="leading" secondItem="tmy-Kb-kLJ" secondAttribute="leading" constant="5" id="PXZ-Uk-LTe"/>
+                    <constraint firstItem="Kff-ri-1mD" firstAttribute="trailing" secondItem="KlR-ej-wk0" secondAttribute="trailing" id="QeE-8W-BGD"/>
+                    <constraint firstAttribute="bottom" secondItem="EEf-P0-heZ" secondAttribute="bottom" constant="4" id="SRx-6m-LqR"/>
+                    <constraint firstAttribute="trailing" secondItem="KlR-ej-wk0" secondAttribute="trailing" constant="15" id="ZUC-pH-3VV"/>
+                    <constraint firstItem="bfU-zb-oiV" firstAttribute="top" secondItem="tmy-Kb-kLJ" secondAttribute="top" constant="7" id="fTn-cF-Gxc"/>
+                    <constraint firstItem="1DW-gn-nMG" firstAttribute="centerY" secondItem="bfU-zb-oiV" secondAttribute="centerY" id="k1Q-aT-eQA"/>
+                    <constraint firstItem="Kff-ri-1mD" firstAttribute="top" secondItem="KlR-ej-wk0" secondAttribute="bottom" constant="2" id="uMb-bK-ulw"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="notificationTextLabel" destination="1DW-gn-nMG" id="753-nW-l1N"/>
+                <outlet property="payButton" destination="NXr-Pq-jz1" id="ax3-FA-XQL"/>
+                <outlet property="ratingAndCheckReasonButton" destination="vlR-IS-UXD" id="KUa-GU-0xT"/>
+                <outlet property="timeLabel" destination="Kff-ri-1mD" id="V6p-qN-wye"/>
+            </connections>
+            <point key="canvasLocation" x="-122.46376811594205" y="127.23214285714285"/>
+        </tableViewCell>
+    </objects>
+    <designables>
+        <designable name="NXr-Pq-jz1">
+            <size key="intrinsicContentSize" width="45" height="32"/>
+        </designable>
+        <designable name="vlR-IS-UXD">
+            <size key="intrinsicContentSize" width="51" height="32"/>
+        </designable>
+    </designables>
+    <resources>
+        <namedColor name="AppInputTextColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="AppPrimaryLabelColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="AppSecondaryBackgroundColor">
+            <color red="0.12549019607843137" green="0.14117647058823529" blue="0.16470588235294117" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="AppSecondaryLabelColor">
+            <color red="0.12549019607843137" green="0.14117647058823529" blue="0.16470588235294117" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="AppTertiaryBackgroundColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemGray3Color">
+            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

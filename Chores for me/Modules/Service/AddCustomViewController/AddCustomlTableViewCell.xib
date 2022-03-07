@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AddCustomlTableViewCell" rowHeight="149" id="KGk-i7-Jjw" customClass="AddCustomlTableViewCell" customModule="Chores_for_me" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="332" height="149"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="332" height="149"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nYh-4p-8kA">
+                        <rect key="frame" x="0.0" y="0.0" width="332" height="149"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ICON-1" translatesAutoresizingMaskIntoConstraints="NO" id="a9O-pr-g0M">
+                                <rect key="frame" x="16" y="19" width="30" height="30"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create Custom Job" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="11d-s6-nof">
+                                <rect key="frame" x="66" y="25" width="132.5" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a7d-WB-CpR">
+                                <rect key="frame" x="295" y="24" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="2b5-sl-qfq"/>
+                                    <constraint firstAttribute="height" constant="20" id="hL5-85-lU4"/>
+                                </constraints>
+                                <state key="normal" image="custom jobs add"/>
+                                <connections>
+                                    <action selector="addButtonAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="GgB-Ww-yav"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" name="AppTertiaryBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="a7d-WB-CpR" secondAttribute="trailing" constant="17" id="0nT-36-CgR"/>
+                            <constraint firstItem="a9O-pr-g0M" firstAttribute="top" secondItem="nYh-4p-8kA" secondAttribute="top" constant="19" id="Cnl-d9-ZxA"/>
+                            <constraint firstItem="11d-s6-nof" firstAttribute="leading" secondItem="a9O-pr-g0M" secondAttribute="trailing" constant="20" id="YNK-sY-2oR"/>
+                            <constraint firstItem="a7d-WB-CpR" firstAttribute="centerY" secondItem="11d-s6-nof" secondAttribute="centerY" id="czx-Dg-0uh"/>
+                            <constraint firstItem="a9O-pr-g0M" firstAttribute="leading" secondItem="nYh-4p-8kA" secondAttribute="leading" constant="16" id="dmM-JT-uTv"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="a9O-pr-g0M" secondAttribute="bottom" constant="12" id="dwr-kD-qRF"/>
+                            <constraint firstItem="11d-s6-nof" firstAttribute="centerY" secondItem="a9O-pr-g0M" secondAttribute="centerY" id="jO9-ok-0uG"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="nYh-4p-8kA" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Pgr-gQ-v5S"/>
+                    <constraint firstAttribute="bottom" secondItem="nYh-4p-8kA" secondAttribute="bottom" id="doe-bw-wP9"/>
+                    <constraint firstItem="nYh-4p-8kA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="iMw-fb-fw1"/>
+                    <constraint firstAttribute="trailing" secondItem="nYh-4p-8kA" secondAttribute="trailing" id="ltc-OR-6Se"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="addButton" destination="a7d-WB-CpR" id="Ove-SH-agc"/>
+            </connections>
+            <point key="canvasLocation" x="-15.942028985507248" y="27.120535714285712"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ICON-1" width="30" height="30"/>
+        <image name="custom jobs add" width="30" height="30"/>
+        <namedColor name="AppTertiaryBackgroundColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
